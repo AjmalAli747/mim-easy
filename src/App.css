@@ -1,0 +1,132 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 255, 242, 0.164);
+}
+
+.form{
+    width: 450px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 20px;
+    text-align: center;
+    box-shadow: 5px 5px 8px -6px rgba(0,0,0,0.5);
+}
+
+.form .inputIcon{
+    position: relative;
+}
+
+.inputIcon input[type="number"]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    outline: none;
+    background-color: transparent;
+    padding-left: 25px;
+}
+
+.inputIcon input[type="number"]:focus{
+    border: 1px solid green;
+}
+
+.inputIcon i{
+    position: absolute;
+    top: 9px;
+    left: 5px;
+    font-size: 1.15rem;
+}
+
+.inputIcon input[type="number"]:focus + i{
+    color: green;
+}
+
+.form input[type="submit"]{
+    margin-top: 10px;
+    padding: 10px 50px;
+    background-color: red;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.form input[type="submit"]:hover{
+    background-color: green;
+}
+
+/* secound Section verification  */
+.verification{
+    width: 100%;
+}
+
+.verification form{
+    width: 100%;
+}
+
+.verification form h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.verification form p{
+    font-size: 1.20rem;
+    font-weight: normal;
+    color: #6e6e6e;
+}
+
+.verification form p span{
+    color: #000000;
+}
+
+.Verification_col input{
+    width: 55px;
+    margin: 25px 5px 15px 5px;
+    border: none;
+    outline: none;
+    border-bottom: 1.50px solid black;
+}
+
+.chnage_Number{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.chnage_Number .fontSize{
+    font-size: 20px;
+    cursor: pointer;
+    color: rgba(2, 2, 156, 0.596);
+}
+
+.Verify_Button{
+    margin-top: 30px;
+    padding: 10px 50px;
+    background-color: red;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.Verify_Button:hover{
+    background-color: green;
+}
+
+@media screen and (max-width: 600px){
+
+    .form{
+        width: 95%;
+        margin: 0 auto;
+    }
+}
